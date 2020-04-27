@@ -1,13 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import CssBaseline from "@material-ui/core/CssBaseline";
 import { Navbar } from "./components";
+import Home from "./components/NewNav/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+    <>
+      <CssBaseline />
+      {/* <Navbar /> */}
+      <Home />
+    </>
   );
 }
 

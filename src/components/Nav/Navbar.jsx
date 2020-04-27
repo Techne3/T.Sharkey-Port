@@ -13,7 +13,6 @@ const Navbar = () => {
       flexGrow: 1,
     },
   });
-
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -22,13 +21,13 @@ const Navbar = () => {
   };
   return (
     <div className={styles.containerNav}>
-      <Paper className={classes.root}>
+      <Paper className={styles.containerNav}>
         <h1>Tim Sharkey</h1>
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="Secondary"
-          textColor="Secondary"
+          indicatorColor="secondary"
+          textColor="secondary"
           centered
         >
           <Tab label="About" />

@@ -1,8 +1,12 @@
 .containerNav {
-  display: flex;
-  background-color: blue !important;
-  color: red;
+  //   display: flex;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  box-shadow: none !important;
+  color: red !important;
   h1 {
-    color: rgb(109, 79, 79);
+    color: rgb(55, 52, 52);
+    padding: 0 3%;
   }
 }
