@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+// 38:37
+//https://www.youtube.com/watch?v=9Q555VoPe4M&t=2379s
 import profilePic from "../../Images/Boy With Glasses.svg";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 import { makeStyles } from "@material-ui/core/styles";
@@ -28,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
     width: 250,
     background: "#511",
-    height: "30rem",
+    height: "100%",
   },
   avatar: {
     display: "block",
@@ -61,19 +63,23 @@ const menuItems = [
 ];
 
 function NavBar() {
-  const [state, setState] = useState({
+  const [isToggle, setIsToggle] = useState({
     right: false,
   });
 
   const toggleSliderRight = (slider, open) => () => {
-    setState({ ...state, [slider]: open });
+    setIsToggle({ ...isToggle, [slider]: open });
   };
   /// bringing in the custom styles from the useStyles function
   const classes = useStyles();
 
   // Toggle slide function for nav
   const sideList = (slider) => (
-    <Box className={classes.menuSliderContainer} component="div">
+    <Box
+      className={classes.menuSliderContainer}
+      component="div"
+      onClick={toggleSliderRight("right", false)}
+    >
       <Avatar className={classes.avatar} src={profilePic} alt="Tim" />
       <Divider />
       <List>
@@ -103,7 +109,11 @@ function NavBar() {
               Portfolio
             </Typography>
           </Toolbar>
-          <MobileRightMenuSlider open={state.right} anchor="right">
+          <MobileRightMenuSlider
+            open={isToggle.right}
+            onClose={toggleSliderRight("right", false)}
+            anchor="right"
+          >
             {sideList("right")}
           </MobileRightMenuSlider>
         </AppBar>
