@@ -56,10 +56,12 @@ const menuItems = [
   {
     listIcon: <Apps />,
     listText: "Portfolio",
+    listPath: "/portfolio",
   },
   {
     listIcon: <ContactMail />,
     listText: "Contact",
+    listPath: "/contact",
   },
 ];
 
@@ -101,7 +103,14 @@ function NavBar() {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#222" }}>
+        <AppBar
+          position="static"
+          style={{
+            background: "#222",
+            position: "fixed",
+            marginBottom: "40rem",
+          }}
+        >
           <Toolbar>
             <IconButton onClick={toggleSliderRight("right", true)}>
               <ArrowBack style={{ color: "tomato" }} />
