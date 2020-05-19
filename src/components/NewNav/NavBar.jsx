@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// 38:37
-//https://www.youtube.com/watch?v=9Q555VoPe4M&t=2379s
+import { Link } from "react-router-dom";
 import profilePic from "../../Images/Boy With Glasses.svg";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 import { makeStyles } from "@material-ui/core/styles";
@@ -47,10 +46,12 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/resume",
   },
   {
     listIcon: <Apps />,
@@ -84,7 +85,7 @@ function NavBar() {
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem button key={key}>
+          <ListItem button key={key} component={Link} to={lsItem.listPath}>
             <ListItemIcon className={classes.listItem}>
               {lsItem.listIcon}
             </ListItemIcon>
