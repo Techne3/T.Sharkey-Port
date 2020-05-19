@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import profilePic from "../../Images/Boy With Glasses.svg";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
+import Footer from "../Footer/Footer";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   AppBar,
@@ -39,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
   },
   listItem: {
     color: "tan",
+    marginTop: "2rem",
   },
 }));
 
@@ -58,11 +60,11 @@ const menuItems = [
     listText: "Portfolio",
     listPath: "/portfolio",
   },
-  {
-    listIcon: <ContactMail />,
-    listText: "Contact",
-    listPath: "/contact",
-  },
+  // {
+  //   listIcon: <ContactMail />,
+  //   listText: "Contact",
+  //   listPath: "/contact",
+  // },
 ];
 
 function NavBar() {
@@ -125,6 +127,7 @@ function NavBar() {
             anchor="right"
           >
             {sideList("right")}
+            <Footer />
           </MobileRightMenuSlider>
         </AppBar>
       </Box>
