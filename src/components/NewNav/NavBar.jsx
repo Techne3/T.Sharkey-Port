@@ -60,11 +60,11 @@ const menuItems = [
     listText: "Portfolio",
     listPath: "/portfolio",
   },
-  // {
-  //   listIcon: <ContactMail />,
-  //   listText: "Contact",
-  //   listPath: "/contact",
-  // },
+  {
+    listIcon: <ContactMail />,
+    listText: "Contact",
+    listPath: "/contact",
+  },
 ];
 
 function NavBar() {

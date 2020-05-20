@@ -43,7 +43,7 @@ function Header() {
       <br />
       <Typography className={classes.subTitle} variant="h4">
         <Typed
-          strings={["Software Developer", "Web Designer", "Tech Enthusiast"]}
+          strings={["Web Developer", "Web Designer", "Tech Enthusiast"]}
           typeSpeed={40}
           backSpeed={60}
           loop
