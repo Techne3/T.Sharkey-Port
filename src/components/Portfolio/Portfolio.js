@@ -11,12 +11,14 @@ import {
   Button,
   Card,
   Typography,
+  Link,
 } from "@material-ui/core";
 
 import WellDone from "../../Images/WellDone.png";
 import Mern from "../../Images/mern-stack.jpg";
 import Redux from "../../Images/react-redux.jpg";
 import JavaScript from "../../Images/javascript-fullstack.jpg";
+import SafeRoute from "../../Images/SafeRoutes.png";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -26,7 +28,12 @@ const useStyles = makeStyles({
   cardContainer: {
     maxWidth: 445,
     margin: "5rem auto",
-    padding: ".5rem",
+    // padding: ".5rem",
+  },
+  cardText: {
+    // display: "flex",
+    // flexWrap: "wrap",
+    // color: "red",
   },
 });
 
@@ -48,21 +55,28 @@ function Portfolio() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project1
+                  WellDone
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  this
-                  thisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthis
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  Tech Stake: test test test test test test test test test test
+                  test test test test test test
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                GitHub
-              </Button>
-              <Button size="small" color="primary">
+              <Link href="https://github.com/Lambda-School-Labs/well-done-fe">
+                <Button size="small" color="primary">
+                  GitHub
+                </Button>
+              </Link>
+              {/* <Button size="small" color="primary">
                 Live Demo
-              </Button>
+              </Button> */}
             </CardActions>
           </Card>
         </Grid>
@@ -74,25 +88,27 @@ function Portfolio() {
                 component="img"
                 alt="Project1"
                 height="240"
-                image={Mern}
+                image={SafeRoute}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project2
+                  Safe-Route
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  this
-                  thisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthis
+                  Tech Stake: test test test test test test test test test test
+                  test test test test test test
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                GitHub
-              </Button>
-              <Button size="small" color="primary">
+              <Link href="https://github.com/Build-Week-Safe-Routes-2/FE_Safe-Routes">
+                <Button size="small" color="primary">
+                  GitHub
+                </Button>
+              </Link>
+              {/* <Button size="small" color="primary">
                 Live Demo
-              </Button>
+              </Button> */}
             </CardActions>
           </Card>
         </Grid>
@@ -108,27 +124,29 @@ function Portfolio() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project1
+                  Use My Tech Stuff
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  this
-                  thisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthis
+                  Tech Stake: test test test test test test test test test test
+                  test test test test test test
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                GitHub
-              </Button>
-              <Button size="small" color="primary">
+              <Link href="https://github.com/BuildWeek-use-my-tech-stuff/Front-end-UMTS">
+                <Button size="small" color="primary">
+                  GitHub
+                </Button>
+              </Link>
+              {/* <Button size="small" color="primary">
                 Live Demo
-              </Button>
+              </Button> */}
             </CardActions>
           </Card>
         </Grid>
         <Grid item xs={12} sm={8} md={6}>
           {/* Project4 */}
-          <Card className={classes.cardContainer}>
+          {/* <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -141,8 +159,8 @@ function Portfolio() {
                   Project1
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  this
-                  thisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthisthis
+                  Tech Stake: test test test test test test test test test test
+                  test test test test test test
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -154,7 +172,7 @@ function Portfolio() {
                 Live Demo
               </Button>
             </CardActions>
-          </Card>
+          </Card> */}
         </Grid>
       </Grid>
     </Box>

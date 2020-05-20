@@ -7,7 +7,6 @@ import Resume from "./components/Resume/Resume";
 import { Route } from "react-router-dom";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contacts/Contact";
-// import NewContact from "./components/Contacts/NewContact";
 function App() {
   return (
     <>
