@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
@@ -43,12 +43,50 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Contact() {
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+  const [contact, setContact] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...contact }),
+    })
+      .then(() => alert("Thank You!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+    setContact({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
+  const handleChange = (e) =>
+    setContact({ ...contact, [e.target.name]: e.target.value });
   const classes = useStyles();
   return (
     <Box component="div" style={{ background: "#233", height: "100vh" }}>
       <Navbar />
       <Grid container justify="center">
-        <Box component="form" className={classes.form}>
+        <Box
+          component="form"
+          className={classes.form}
+          name="form-name"
+          value="contact"
+        >
+          <InputField type="hidden" name="form-name" value="contact" />
           <Typography
             variant="h5"
             style={{
@@ -66,6 +104,10 @@ function Contact() {
             margin="dense"
             size="medium"
             inputProps={{ style: { color: "#fff" } }}
+            type="text"
+            name="name"
+            value={contact.name}
+            onChange={handleChange}
           />
           <br />
           <InputField
@@ -75,14 +117,20 @@ function Contact() {
             margin="dense"
             size="medium"
             inputProps={{ style: { color: "#fff" } }}
+            type="email"
+            name="email"
+            value={contact.email}
+            onChange={handleChange}
           />
           <br />
           <InputField
             fullWidth={true}
             label="Message"
             variant="outlined"
-            size="large"
             inputProps={{ style: { color: "#fff" } }}
+            name="message"
+            value={contact.message}
+            onChange={handleChange}
           />
           <br />
           <Button
@@ -90,6 +138,7 @@ function Contact() {
             fullWidth={true}
             endIcon={<SendIcon />}
             className={classes.button}
+            onClick={handleSubmit}
           >
             Contact me
           </Button>
