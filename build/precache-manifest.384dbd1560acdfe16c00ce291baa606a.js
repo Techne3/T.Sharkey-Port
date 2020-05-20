@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a5da0004a62e1c51dab24e696437410f",
+    "revision": "00444e11ac38b8adfc79fb5b7b243496",
     "url": "/index.html"
   },
   {
-    "revision": "018b380aa7d3c6823226",
+    "revision": "4dad52c309cb2231c866",
     "url": "/static/css/main.19981cd3.chunk.css"
   },
   {
-    "revision": "6500351346b5f5e5897e",
-    "url": "/static/js/2.3dfbfdc0.chunk.js"
+    "revision": "e36e586152956d808ae9",
+    "url": "/static/js/2.dbca9311.chunk.js"
   },
   {
     "revision": "cf89bcfdc86db2c261a743301fbeb514",
-    "url": "/static/js/2.3dfbfdc0.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.dbca9311.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "018b380aa7d3c6823226",
-    "url": "/static/js/main.da39b3d4.chunk.js"
+    "revision": "4dad52c309cb2231c866",
+    "url": "/static/js/main.1cdacb69.chunk.js"
   },
   {
     "revision": "b4ba650b238755144e2a",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "08f9a451849a94558b1901855a7b63cb",
     "url": "/static/media/Boy With Glasses.08f9a451.svg"
+  },
+  {
+    "revision": "e0b1f59ec22afbc4a7d1025263356ea6",
+    "url": "/static/media/SafeRoutes.e0b1f59e.png"
   },
   {
     "revision": "a17bca9655eca2dcb802f299f356e7d7",
