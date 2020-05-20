@@ -17,7 +17,7 @@ function Home() {
     <div>
       <NavBar />
       <Header />
-      <Particles
+      {/* <Particles
         canvasClassName={classes.particlesCanvas}
         params={{
           particles: {
@@ -57,7 +57,7 @@ function Home() {
             },
           },
         }}
-      />
+      /> */}
     </div>
   );
 }

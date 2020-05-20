@@ -4,6 +4,7 @@ import profilePic from "../../Images/Boy With Glasses.svg";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 import Footer from "../Footer/Footer";
 import { makeStyles } from "@material-ui/core/styles";
+import logo from "../../Images/logo.png";
 import {
   AppBar,
   Toolbar,
@@ -85,7 +86,12 @@ function NavBar() {
       component="div"
       onClick={toggleSliderRight("right", false)}
     >
-      <Avatar className={classes.avatar} src={profilePic} alt="Tim" />
+      <Avatar
+        className={classes.avatar}
+        src={logo}
+        alt="Tim"
+        variant="square"
+      />
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
@@ -118,7 +124,7 @@ function NavBar() {
               <ArrowBack style={{ color: "tomato" }} />
             </IconButton>
             <Typography variant="h5" style={{ color: "tan" }}>
-              Portfolio
+              TS
             </Typography>
           </Toolbar>
           <MobileRightMenuSlider

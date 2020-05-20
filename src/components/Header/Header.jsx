@@ -3,12 +3,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 import profilePic from "../../Images/Boy With Glasses.svg";
 import Typed from "react-typed";
+import logo from "../../Images/logo.png";
 
 // styles
 const useStyles = makeStyles((theme) => ({
   avatar: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
+    width: theme.spacing(20),
+    height: theme.spacing(20),
     margin: theme.spacing(1),
   },
   title: {
@@ -35,10 +36,15 @@ function Header() {
   return (
     <Box className={classes.typedContainer}>
       <Grid container justify="center">
-        <Avatar className={classes.avatar} src={profilePic} alt="Tim" />
+        <Avatar
+          className={classes.avatar}
+          src={logo}
+          alt="Tim"
+          variant="square"
+        />
       </Grid>
       <Typography className={classes.title} variant="h4">
-        <Typed strings={["Tim Sharkey"]} typeSpeed={40} />
+        <Typed strings={["Timothy Sharkey"]} typeSpeed={40} />
       </Typography>
       <br />
       <Typography className={classes.subTitle} variant="h4">
