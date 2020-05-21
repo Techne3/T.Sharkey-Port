@@ -149,8 +149,9 @@ function Portfolio() {
                   •Contributed to a team of 3 fullstack developers and 3 data
                   scientists to create a user-friendly application over a
                   week-long sprint
-                  <br />• Built out client-side form validation using React and
-                  controlled the state management with Context Hooks
+                  <br />• Built out client-side routing and JWT credential
+                  validation using React and controlled the state management
+                  with Context Hooks
                   <br />• Created a dashboard that utilized Google Maps Api &
                   statistical information to map hazardous intersections, giving
                   the user the ability to choose a safer route to their

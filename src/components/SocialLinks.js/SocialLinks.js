@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
+import { NavLink } from "react-router-dom";
 import {
   BottomNavigation,
   BottomNavigationAction,
@@ -62,13 +63,13 @@ function SocialLinks() {
         />
       </Link>
 
-      <Link href="/contact" style={{ background: "#222" }}>
+      <NavLink to="/contact" style={{ background: "#222" }}>
         <BottomNavigationAction
           style={{ paddingTop: 15 }}
           className={classes.root}
           icon={<MailOutlineIcon />}
         />
-      </Link>
+      </NavLink>
     </BottomNavigation>
   );
 }

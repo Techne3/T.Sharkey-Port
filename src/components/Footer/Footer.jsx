@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 import {
   BottomNavigation,
@@ -49,13 +50,13 @@ function Footer() {
         />
       </Link>
 
-      <Link href="/contact" style={{ background: "#222" }}>
+      <NavLink to="/contact" style={{ background: "#222" }}>
         <BottomNavigationAction
           style={{ paddingTop: 12 }}
           className={classes.root}
           icon={<MailOutlineIcon />}
         />
-      </Link>
+      </NavLink>
     </BottomNavigation>
   );
 }
