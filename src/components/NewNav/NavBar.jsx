@@ -23,6 +23,7 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 
+import MenuIcon from "@material-ui/icons/Menu";
 import {
   ArrowBack,
   AssignmentInd,
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     display: "block",
-    margin: "0.5rem auto",
+    margin: "1.9rem auto",
     width: theme.spacing(13),
     height: theme.spacing(13),
   },
@@ -125,11 +126,11 @@ function NavBar() {
         >
           <Toolbar>
             <IconButton onClick={toggleSliderRight("right", true)}>
-              <ArrowBack style={{ color: "tomato" }} />
+              <MenuIcon style={{ color: "tomato", fontSize: "30px" }} />
             </IconButton>
-            <Typography variant="h5" style={{ color: "tan" }}>
+            {/* <Typography variant="h5" style={{ color: "tan" }}>
               TS
-            </Typography>
+            </Typography> */}
             <SocialLinks />
           </Toolbar>
           <MobileRightMenuSlider

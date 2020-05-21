@@ -27,7 +27,8 @@ const useStyles = makeStyles({
   },
   cardContainer: {
     maxWidth: 445,
-    margin: "5rem auto",
+    minHeight: 650,
+    margin: "6rem auto",
     // padding: ".5rem",
   },
   cardText: {
@@ -58,13 +59,39 @@ function Portfolio() {
                   WellDone
                 </Typography>
                 <Typography
+                  variant="body1"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  WellDone International is a non-profit organization working to
+                  improve global access to clean water.
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="tomato"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  <br />
+                  Tech Stack: React.js, Redux, Node.js, Express.js, PostgreSQL
+                </Typography>
+                <Typography
                   variant="body2"
                   color="textSecondary"
                   component="p"
                   className={classes.cardText}
                 >
-                  Tech Stake: test test test test test test test test test test
-                  test test test test test test
+                  <br />
+                  • Contributed to a team of 5 fullstack developers, 2 Android
+                  developers, and 2 UX designers
+                  <br />• Built out a frontend using React with Redux to help
+                  with state management. Took in data from our stakeholder's IoT
+                  device and organized it with the use of React charts d3 for
+                  data visualization, React-map-gl for mapping and geolocation,
+                  and ag-grid for systematically arranging data.
+                  <br />• Worked side by side with a stakeholder of a
+                  well-established nonprofit
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -92,11 +119,42 @@ function Portfolio() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Safe-Route
+                  Safe Routes
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Tech Stake: test test test test test test test test test test
-                  test test test test test test
+                <Typography
+                  variant="body1"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  Safe Route is a web-based application highlighting the most
+                  dangerous intersections in a given geographical location.
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="tomato"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  <br />
+                  Tech Stack: React.js, Context Hooks, GoogleMaps API, SASS
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  <br />
+                  •Contributed to a team of 3 fullstack developers and 3 data
+                  scientists to create a user-friendly application over a
+                  week-long sprint
+                  <br />• Built out client-side form validation using React and
+                  controlled the state management with Context Hooks
+                  <br />• Created a dashboard that utilized Google Maps Api &
+                  statistical information to map hazardous intersections, giving
+                  the user the ability to choose a safer route to their
+                  destination
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -126,9 +184,39 @@ function Portfolio() {
                 <Typography gutterBottom variant="h5">
                   Use My Tech Stuff
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Tech Stake: test test test test test test test test test test
-                  test test test test test test
+                <Typography
+                  variant="body1"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  Use my tech stuff, is a web-based application to help users
+                  get paid for lending out their technical gear. Think Airbnb
+                  for your tech gear.
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="tomato"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  <br />
+                  Tech Stack: React.js, context hooks, node.js, SASS
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  <br />
+                  • Contributed to frontend interface with a team of 3
+                  developers over a week-long sprint.
+                  <br />• Created a user dashboard to view, filter through, and
+                  place holds on available technical gear using React and
+                  Context hooks for state management
+                  <br />• Applied JSON web token technology for user credential
+                  authentication
                 </Typography>
               </CardContent>
             </CardActionArea>

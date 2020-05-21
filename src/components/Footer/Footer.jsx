@@ -49,7 +49,7 @@ function Footer() {
         />
       </Link>
 
-      <Link href="https://techne3@gmail.com" style={{ background: "#222" }}>
+      <Link href="/contact" style={{ background: "#222" }}>
         <BottomNavigationAction
           style={{ paddingTop: 12 }}
           className={classes.root}

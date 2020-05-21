@@ -6,7 +6,7 @@ import NavBar from "../NewNav/NavBar";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
-    height: "100vh",
+    height: "100%",
   },
   timeLine: {
     position: "relative",
@@ -111,6 +111,13 @@ function Resume() {
     <>
       <NavBar />
       <Box component="header" className={classes.mainContainer}>
+        <Typography variant="h3" align="center" className={classes.heading}>
+          Technical Skills:
+        </Typography>
+        <Typography variant="h4" align="center" className={classes.subHeading}>
+          • React • Redux • Javascript • Node.js • Express
+          <br />• SQL • Postgres • Python • SASS • HTML
+        </Typography>
         <Typography variant="h4" align="center" className={classes.heading}>
           working experience
         </Typography>
@@ -119,7 +126,7 @@ function Resume() {
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            2013
+            2019-2020
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -127,31 +134,36 @@ function Resume() {
               align="left"
               className={classes.subHeading}
             >
-              Web Design
+              Web Developer
             </Typography>
             <Typography
               variant="body1"
               align="left"
               style={{ color: "tomato" }}
             >
-              company name where worked
+              WellDone
             </Typography>
             <Typography
               variant="subtitle1"
               align="left"
               style={{ color: "tan" }}
             >
-              description of the jobdescription of the jobdescription of the
-              jobdescription of the jobdescription of the jobdescription of the
-              jobdescription of the jobdescription of the jobdescription of the
-              job
+              • Contributed to a team of 5 fullstack developers, 2 Android
+              developers, and 2 UX designers
+              <br />• Built out a frontend using React with Redux to help with
+              state management. Took in data from our stakeholder's IoT device
+              and organized it with the use of React charts d3 for data
+              visualization, React-map-gl for mapping and geolocation, and
+              ag-grid for systematically arranging data.
+              <br />• Worked side by side with a stakeholder of a
+              well-established nonprofit
             </Typography>
           </Box>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            2014
+            2013-2019
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -159,24 +171,62 @@ function Resume() {
               align="left"
               className={classes.subHeading}
             >
-              Web Design
+              Management
             </Typography>
             <Typography
               variant="body1"
               align="left"
               style={{ color: "tomato" }}
             >
-              company name where worked
+              City Ice
             </Typography>
             <Typography
               variant="subtitle1"
               align="left"
               style={{ color: "tan" }}
             >
-              description of the jobdescription of the jobdescription of the
-              jobdescription of the jobdescription of the jobdescription of the
-              jobdescription of the jobdescription of the jobdescription of the
-              job
+              • Lead and trained a team of 15+ employees on how to maintain
+              proper customer relations while still advancing overall
+              productivity
+              <br />
+              • Increased customer contracts and sponsorship deals that helped
+              advance our overall profit margin by 30%
+              <br />
+              • Created a new employment training handbook that broke down daily
+              employee protocols into clear and concise objectives to increase
+              productivity
+              <br />• Supported team members by instilling proficiency skills
+              that helped manage employee morale in a fast-paced environment
+            </Typography>
+          </Box>
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
+            2012
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="left"
+              className={classes.subHeading}
+            >
+              Volunteer
+            </Typography>
+            <Typography
+              variant="body1"
+              align="left"
+              style={{ color: "tomato" }}
+            >
+              Salt Lake City Bike Collective
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="left"
+              style={{ color: "tan" }}
+            >
+              Helped run a program to build and tune bikes for underprivileged
+              children
             </Typography>
           </Box>
         </Box>

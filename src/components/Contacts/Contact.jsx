@@ -26,6 +26,14 @@ const InputField = withStyles({
     },
   },
 })(TextField);
+const useStyle = makeStyles((theme) => ({
+  root: {
+    "& .MuiTextField-root": {
+      margin: theme.spacing(1),
+      width: 200,
+    },
+  },
+}));
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -33,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     left: "50%",
     transform: "translate(-50%, -50%)",
     position: "absolute",
-    width: "30%",
+    width: "35%",
   },
   button: {
     marginTop: "1rem",
@@ -76,6 +84,7 @@ function Contact() {
   const handleChange = (e) =>
     setContact({ ...contact, [e.target.name]: e.target.value });
   const classes = useStyles();
+  const multiClass = useStyle();
   return (
     <Box component="div" style={{ background: "#233", height: "100vh" }}>
       <Navbar />
@@ -88,14 +97,14 @@ function Contact() {
         >
           <InputField type="hidden" name="form-name" value="contact" />
           <Typography
-            variant="h5"
+            variant="h6"
             style={{
               color: "tomato",
               textAlign: "center",
               textTransform: "uppercase",
             }}
           >
-            Contact me
+            Please reach out by sending a message below
           </Typography>
           <InputField
             fullWidth={true}
@@ -127,6 +136,9 @@ function Contact() {
             fullWidth={true}
             label="Message"
             variant="outlined"
+            // id="outlined-multiline-static"
+            // multiline
+            // rowsMax="10"
             inputProps={{ style: { color: "#fff" } }}
             name="message"
             value={contact.message}
