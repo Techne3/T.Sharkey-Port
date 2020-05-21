@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import profilePic from "../../Images/Boy With Glasses.svg";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 import Footer from "../Footer/Footer";
+import SocialLinks from "../SocialLinks.js/SocialLinks";
 import { makeStyles } from "@material-ui/core/styles";
 import logo from "../../Images/logo.png";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
+
 import {
   AppBar,
   Toolbar,
@@ -16,6 +19,7 @@ import {
   List,
   Typography,
   Box,
+  Button,
   ListItemIcon,
 } from "@material-ui/core";
 
@@ -95,7 +99,7 @@ function NavBar() {
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem button key={key} component={Link} to={lsItem.listPath}>
+          <ListItem button key={key} component={NavLink} to={lsItem.listPath}>
             <ListItemIcon className={classes.listItem}>
               {lsItem.listIcon}
             </ListItemIcon>
@@ -126,6 +130,7 @@ function NavBar() {
             <Typography variant="h5" style={{ color: "tan" }}>
               TS
             </Typography>
+            <SocialLinks />
           </Toolbar>
           <MobileRightMenuSlider
             open={isToggle.right}
