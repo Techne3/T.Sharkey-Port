@@ -192,7 +192,7 @@ function Portfolio() {
                   className={classes.cardText}
                 >
                   Use my tech stuff, is a web-based application that helps users
-                  get paid for lending out their technical gear. Think Airbnb
+                  to get paid for lending out their technical gear. Think Airbnb
                   for your tech gear.
                 </Typography>
                 <Typography
