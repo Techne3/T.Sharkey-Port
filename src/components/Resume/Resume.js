@@ -185,7 +185,7 @@ function Resume() {
               align="left"
               style={{ color: "tan" }}
             >
-              • Lead and trained a team of 15+ employees on how to maintain
+              • Led and trained a team of 15+ employees on how to maintain
               proper customer relations while still advancing overall
               productivity
               <br />
