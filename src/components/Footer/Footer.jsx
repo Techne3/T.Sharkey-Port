@@ -40,7 +40,7 @@ function Footer() {
       </Link>
 
       <Link
-        href="https://www.linkedin.com/in/timothy-sharkey-40789988/"
+        href="https://www.linkedin.com/in/timothy-sharky/"
         style={{ background: "#222" }}
       >
         <BottomNavigationAction
