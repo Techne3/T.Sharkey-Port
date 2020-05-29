@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/tsharkey.tech/static/css/main.19981cd3.chunk.css",
-    "main.js": "/tsharkey.tech/static/js/main.34a2d094.chunk.js",
-    "main.js.map": "/tsharkey.tech/static/js/main.34a2d094.chunk.js.map",
-    "runtime-main.js": "/tsharkey.tech/static/js/runtime-main.e0beabe9.js",
-    "runtime-main.js.map": "/tsharkey.tech/static/js/runtime-main.e0beabe9.js.map",
-    "static/js/2.bb4488cf.chunk.js": "/tsharkey.tech/static/js/2.bb4488cf.chunk.js",
-    "static/js/2.bb4488cf.chunk.js.map": "/tsharkey.tech/static/js/2.bb4488cf.chunk.js.map",
-    "index.html": "/tsharkey.tech/index.html",
-    "precache-manifest.7ed35361ecc7e2e7a237e1878ad716f3.js": "/tsharkey.tech/precache-manifest.7ed35361ecc7e2e7a237e1878ad716f3.js",
-    "service-worker.js": "/tsharkey.tech/service-worker.js",
-    "static/css/main.19981cd3.chunk.css.map": "/tsharkey.tech/static/css/main.19981cd3.chunk.css.map",
-    "static/js/2.bb4488cf.chunk.js.LICENSE.txt": "/tsharkey.tech/static/js/2.bb4488cf.chunk.js.LICENSE.txt",
-    "static/media/Boy With Glasses.svg": "/tsharkey.tech/static/media/Boy With Glasses.08f9a451.svg",
-    "static/media/SafeRoutes.png": "/tsharkey.tech/static/media/SafeRoutes.e0b1f59e.png",
-    "static/media/WellDone.png": "/tsharkey.tech/static/media/WellDone.528e1252.png",
-    "static/media/javascript-fullstack.jpg": "/tsharkey.tech/static/media/javascript-fullstack.730958a2.jpg",
-    "static/media/logo.png": "/tsharkey.tech/static/media/logo.752bbc91.png",
-    "static/media/mern-stack.jpg": "/tsharkey.tech/static/media/mern-stack.90616a5d.jpg",
-    "static/media/react-redux.jpg": "/tsharkey.tech/static/media/react-redux.a8b012a0.jpg"
+    "main.css": "/static/css/main.19981cd3.chunk.css",
+    "main.js": "/static/js/main.f29a58fe.chunk.js",
+    "main.js.map": "/static/js/main.f29a58fe.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
+    "static/js/2.bb4488cf.chunk.js": "/static/js/2.bb4488cf.chunk.js",
+    "static/js/2.bb4488cf.chunk.js.map": "/static/js/2.bb4488cf.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.214a2a6872ae3b43d7ac82c628bad919.js": "/precache-manifest.214a2a6872ae3b43d7ac82c628bad919.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.19981cd3.chunk.css.map": "/static/css/main.19981cd3.chunk.css.map",
+    "static/js/2.bb4488cf.chunk.js.LICENSE.txt": "/static/js/2.bb4488cf.chunk.js.LICENSE.txt",
+    "static/media/Boy With Glasses.svg": "/static/media/Boy With Glasses.08f9a451.svg",
+    "static/media/SafeRoutes.png": "/static/media/SafeRoutes.e0b1f59e.png",
+    "static/media/WellDone.png": "/static/media/WellDone.528e1252.png",
+    "static/media/javascript-fullstack.jpg": "/static/media/javascript-fullstack.730958a2.jpg",
+    "static/media/logo.png": "/static/media/logo.752bbc91.png",
+    "static/media/mern-stack.jpg": "/static/media/mern-stack.90616a5d.jpg",
+    "static/media/react-redux.jpg": "/static/media/react-redux.a8b012a0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e0beabe9.js",
+    "static/js/runtime-main.e5fc83a6.js",
     "static/js/2.bb4488cf.chunk.js",
     "static/css/main.19981cd3.chunk.css",
-    "static/js/main.34a2d094.chunk.js"
+    "static/js/main.f29a58fe.chunk.js"
   ]
 }
