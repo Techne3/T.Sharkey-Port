@@ -45,7 +45,6 @@ function Header() {
       </Grid>
       <Typography className={classes.title} variant="h4">
         Timothy Sharkey
-        {/* <Typed strings={["Timothy Sharkey"]} typeSpeed={40} /> */}
       </Typography>
       <br />
       <Typography className={classes.subTitle} variant="h4">
