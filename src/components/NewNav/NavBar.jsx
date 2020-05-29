@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import profilePic from "../../Images/Boy With Glasses.svg";
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
 import Footer from "../Footer/Footer";
 import SocialLinks from "../SocialLinks.js/SocialLinks";
 import { makeStyles } from "@material-ui/core/styles";
 import logo from "../../Images/logo.png";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
 import {
   AppBar,
@@ -17,9 +15,7 @@ import {
   Avatar,
   Divider,
   List,
-  Typography,
   Box,
-  Button,
   ListItemIcon,
 } from "@material-ui/core";
 
