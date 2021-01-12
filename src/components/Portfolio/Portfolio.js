@@ -16,6 +16,7 @@ import {
 
 import WellDone from "../../Images/WellDone.png";
 import Mern from "../../Images/mern-stack.jpg";
+import ecom from "../../Images/ecom_short.png";
 import Redux from "../../Images/react-redux.jpg";
 import JavaScript from "../../Images/javascript-fullstack.jpg";
 import SafeRoute from "../../Images/SafeRoutes.png";
@@ -26,7 +27,7 @@ const useStyles = makeStyles({
     height: "100%",
   },
   cardContainer: {
-    maxWidth: 445,
+    maxWidth: 660,
     minHeight: 650,
     margin: "6rem auto",
     // padding: ".5rem",
@@ -36,6 +37,9 @@ const useStyles = makeStyles({
     // flexWrap: "wrap",
     // color: "red",
   },
+  media: {
+    // padding: ".3rem",
+  },
 });
 
 function Portfolio() {
@@ -44,15 +48,15 @@ function Portfolio() {
     <Box component="div" className={classes.mainContainer}>
       <Navbar />
       <Grid container justify="center">
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={12} sm={12} md={12}>
           {/* Project1 */}
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 alt="Project1"
-                height="240"
                 image={WellDone}
+                className={classes.media}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
@@ -107,16 +111,67 @@ function Portfolio() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={8} md={6}>
+
+        <Grid item xs={12} sm={12} md={12}>
           {/* Project2 */}
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 alt="Project1"
-                height="240"
-                image={SafeRoute}
+                image={ecom}
+                className={classes.media}
               />
+              <CardContent>
+                <Typography gutterBottom variant="h5">
+                  Bike Ecommerce
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  Bike Ecommerce, is a web-based application
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="tomato"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  <br />
+                  Tech Stack: MongoDB,React.js, Redux, Material-UI, PAYPAL
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  <br />
+                  • Ecommerce site built using MongoDB for backend API.
+                  <br />• Integrated PAYPAL for payment authentication
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Link href="https://github.com/BuildWeek-use-my-tech-stuff/Front-end-UMTS">
+                <Button size="small" color="primary">
+                  GitHub
+                </Button>
+              </Link>
+              {/* <Button size="small" color="primary">
+                Live Demo
+              </Button> */}
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={12} md={12}>
+          {/* Project2 */}
+          <Card className={classes.cardContainer}>
+            <CardActionArea>
+              <CardMedia component="img" alt="Project1" image={SafeRoute} />
               <CardContent>
                 <Typography gutterBottom variant="h5">
                   Safe Routes
@@ -161,68 +216,6 @@ function Portfolio() {
             </CardActionArea>
             <CardActions>
               <Link href="https://github.com/Build-Week-Safe-Routes-2/FE_Safe-Routes">
-                <Button size="small" color="primary">
-                  GitHub
-                </Button>
-              </Link>
-              {/* <Button size="small" color="primary">
-                Live Demo
-              </Button> */}
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={8} md={6}>
-          {/* Project3 */}
-          <Card className={classes.cardContainer}>
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="Project1"
-                height="240"
-                image={Redux}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  Use My Tech Stuff
-                </Typography>
-                <Typography
-                  variant="body1"
-                  color="textSecondary"
-                  component="p"
-                  className={classes.cardText}
-                >
-                  Use my tech stuff, is a web-based application that helps users
-                  to get paid for lending out their technical gear. Think Airbnb
-                  for your tech gear.
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="tomato"
-                  component="p"
-                  className={classes.cardText}
-                >
-                  <br />
-                  Tech Stack: React.js, context hooks, node.js, SASS
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="textSecondary"
-                  component="p"
-                  className={classes.cardText}
-                >
-                  <br />
-                  • Contributed to frontend interface with a team of 3
-                  developers over a week-long sprint.
-                  <br />• Created a user dashboard to view, filter through, and
-                  place holds on available technical gear using React and
-                  Context hooks for state management
-                  <br />• Applied JSON web token technology for user credential
-                  authentication
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Link href="https://github.com/BuildWeek-use-my-tech-stuff/Front-end-UMTS">
                 <Button size="small" color="primary">
                   GitHub
                 </Button>
