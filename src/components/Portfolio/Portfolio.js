@@ -14,6 +14,7 @@ import {
   Link,
 } from "@material-ui/core";
 
+import Expense from "../../Images/Expense.png";
 import WellDone from "../../Images/WellDone.png";
 import Mern from "../../Images/mern-stack.jpg";
 import ecom from "../../Images/ecom_short.png";
@@ -150,21 +151,35 @@ function Portfolio() {
                   className={classes.cardText}
                 >
                   <br />
-                  • Ecommerce site built using MongoDB for backend API.
+                  • Ecommerce site built using React for frontend user interface
+                  <br />
+                  • Redux utilized for state management
+                  <br />
+                  • Backend API built using MongoDB
                   <br />• Integrated PAYPAL for payment authentication
+                  <br />• Styled with Material UI
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Link href="https://github.com/BuildWeek-use-my-tech-stuff/Front-end-UMTS">
+              <Link href="https://github.com/Techne3/ecommerce_app">
                 <Button size="small" color="primary">
                   GitHub
                 </Button>
               </Link>
-              {/* <Button size="small" color="primary">
-                Live Demo
-              </Button> */}
+              <Link href="https://bikes-ecom.herokuapp.com">
+                <Button size="small" color="primary">
+                  Live Demo
+                </Button>
+              </Link>
             </CardActions>
+            <Typography style={{ margin: " 1.4rem", color: "navy" }}>
+              <h4> App login credentials</h4>
+              <p />
+              Email: <b>test@gmail.com </b>
+              <br />
+              password: <b>123 </b>
+            </Typography>
           </Card>
         </Grid>
         <Grid item xs={12} sm={12} md={12}>
@@ -226,35 +241,62 @@ function Portfolio() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={12} sm={12} md={12}>
           {/* Project4 */}
-          {/* <Card className={classes.cardContainer}>
+          <Card className={classes.cardContainer}>
             <CardActionArea>
-              <CardMedia
-                component="img"
-                alt="Project1"
-                height="240"
-                image={JavaScript}
-              />
+              <CardMedia component="img" alt="Project1" image={Expense} />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Project1
+                  Voice Expense
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Tech Stake: test test test test test test test test test test
-                  test test test test test test
+                <Typography
+                  variant="body1"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  Voice assisted expense tracking app
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="tomato"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  <br />
+                  Tech Stack: React.js, Context Hooks, Speechly API, Material UI
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  component="p"
+                  className={classes.cardText}
+                >
+                  <br />
+                  • Voice assisted expense tracking app
+                  <br />
+                  • Integrated speech recognition using Speechly API
+                  <br />• Context Hooks for managing the state
+                  <br />• Created a dashboard that updates state and populates
+                  data, tables, & graphs using Chart.js once a voice command is
+                  given
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                GitHub
-              </Button>
-              <Button size="small" color="primary">
-                Live Demo
-              </Button>
+              <Link href="https://github.com/Techne3/voice_expense">
+                <Button size="small" color="primary">
+                  GitHub
+                </Button>
+              </Link>
+              <Link href="https://voice-expense.netlify.app/">
+                <Button size="small" color="primary">
+                  Live Demo
+                </Button>
+              </Link>
             </CardActions>
-          </Card> */}
+          </Card>
         </Grid>
       </Grid>
     </Box>
